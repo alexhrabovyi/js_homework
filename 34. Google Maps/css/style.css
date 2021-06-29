@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(188, 220, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 32px;
+    color: rgb(0, 79, 95);
+    letter-spacing: 0.1em;
+}
+
+.title_top {
+ margin-bottom: 20px;
+}
+
+.input-boxes-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.input-box{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(8, 62, 73);
+    border-top: 0px;
+    position: relative;
+}
+
+.input-box__title {
+    width: 260px;
+    text-align: center;
+    color: rgb(8, 62, 73);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: -9.5px;
+}
+
+.input-box__title::before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    background: rgb(8, 62, 73);
+    position: absolute;
+    top: 50%;
+    left: -27%;
+    transform: translateY(-50%);
+}
+
+.input-box__title::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    background: rgb(8, 62, 73);
+    position: absolute;
+    top: 50%;
+    right: -27%;
+    transform: translateY(-50%);
+}
+
+.input-box_2 {
+    margin: 0 40px;
+}
+
+.input-box__input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(8, 62, 73);
+    border-radius: 3px;
+    background: rgb(222, 250, 255);
+    padding: 0 10px;
+}
+
+.input-top {
+    margin: 20px 0;
+}
+
+.input-bottom {
+    margin-bottom: 40px;
+}
+
+.button {
+    width: 270px;
+    height: 30px;
+    border: 2px solid rgb(8, 62, 73);
+    border-radius: 5px;
+    background: rgb(222, 250, 255);
+    font-weight: 700;
+    color: rgb(8, 62, 73);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+    background: rgb(188, 220, 226);
+}
+
+.button_route {
+    margin-top: 140px;
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+    border: 3px solid rgb(8, 62, 73);
+}
