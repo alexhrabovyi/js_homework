@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+    font-family: 'Raleway', sans-serif;
+}
+
+.accordion-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(246, 112, 75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 135px 0;
+}
+
+.block-wrapper__header-panel {
+    width: 380px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 22px; 
+    cursor: pointer;
+}
+
+.header-panel_dark-red {
+    background: rgb(98, 8, 8);  
+}
+
+.header-panel_light-red {
+    background: rgb(165, 63, 63);
+}
+
+.header-panel_yellow {
+    background: rgb(244, 206, 116);
+}
+
+.header-panel_white {
+    background: rgb(255, 233, 193);
+}
+
+.header-panel_orange {
+    background: rgb(213, 68, 28);
+}
+
+.header-panel__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 24px;    
+}
+
+.header-panel__title_dark-red {
+    color: rgb(255, 233, 193);
+}
+
+.header-panel__title_light-red {
+    color: rgb(244, 206, 116);
+}
+
+.header-panel__title_yellow {
+    color: rgb(98, 8, 8);    
+}
+
+.header-panel__title_white {
+    color: rgb(165, 63, 63);
+}
+
+.header-panel__title_orange {
+    color: rgb(255, 233, 193);
+}
+
+.block-wrapper__text-block {
+    width: 380px;
+    height: 216px;
+    padding: 24px;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+.text-block_dark-red {
+    background: rgb(98, 8, 8);      
+}
+
+.text-block_light-red {
+    background: rgb(165, 63, 63);
+}
+
+.text-block_yellow {
+    background: rgb(244, 206, 116);
+}
+
+.text-block_white {
+    background: rgb(255, 233, 193);
+}
+
+.text-block_orange {
+    background: rgb(213, 68, 28);
+}
+
+.block-wrapper__text-block__text {
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 17px;    
+}
+
+.text_dark-red {
+    color: rgb(255, 233, 193);    
+}
+
+.text_light-red {
+    color: rgb(244, 206, 116);
+}
+
+.text_yellow {
+    color: rgb(98, 8, 8);
+}
+
+.text_white {
+    color: rgb(165, 63, 63);
+}
+
+.text_orange {
+    color: rgb(255, 233, 193);
+}

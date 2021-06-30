@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Sani4`s JUKEBOX</h1>
+        <h3 class="header__subtitle">METALLICA</h3>
+        <h5 class="header__track-name">ENTER SANDMAN</h5>
+        <img class="header__img" src="/img/enter_sandman.jpg">
+        <button class="header__button" onclick="buttonNext()">Next song</button>
+    </header>
+    <script>
+        // 1. Создать страницу, которая выводит нумерованный список песен:
+        let playList = [
+
+            {
+                author: "LED ZEPPELIN",
+                song: "STAIRWAY TO HEAVEN",
+                img_src: "img/led_zeppelin.png",
+            },
+
+            {
+                author: "QUEEN",
+                song: "BOHEMIAN RHAPSODY",
+                img_src: "img/bohemian_rhapsody.jpg",
+            },
+
+            {
+                author: "LYNYRD SKYNYRD",
+                song: "FREE BIRD",
+                img_src: "img/free_bird.jpg",
+            },
+
+            {
+                author: "DEEP PURPLE",
+                song: "SMOKE ON THE WATER",
+                img_src: "img/smoke_on_the_water.jpg",
+            },
+
+            {
+                author: "JIMI HENDRIX",
+                song: "ALL ALONG THE WATCHTOWER",
+                img_src: "img/all_along_the_watchers.jpg",
+            },
+
+            {
+                author: "AC/DC",
+                song: "BACK IN BLACK",
+                img_src: "img/back_in_black.jpg",
+            },
+
+            {
+                author: "QUEEN",
+                song: "WE WILL ROCK YOU",
+                img_src: "img/we_will_rock_you.jpg",
+            },
+
+            {
+                author: "METALLICA",
+                song: "ENTER SANDMAN",
+                img_src: "img/enter_sandman.jpg",
+            },
+
+        ];
+
+
+        const button = document.getElementsByClassName("header__button")[0];
+        const song_writer = document.getElementsByClassName("header__subtitle")[0];
+        const song_name = document.getElementsByClassName("header__track-name")[0];
+        const song_img = document.getElementsByClassName("header__img")[0];
+
+        function buttonNext() {
+            let playList_elem = playList.shift();
+            playList.push(playList_elem);
+            song_writer.innerHTML = playList_elem.author;
+            song_name.innerHTML = playList_elem.song;
+            song_img.src = playList_elem.img_src;
+        }
+    </script>
+</body>
+
+</html>
