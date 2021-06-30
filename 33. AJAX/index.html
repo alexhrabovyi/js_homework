@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX HOMEWORK</title>
+    <link rel="stylesheet" href="css/style.css">
+    <template id="film_template">
+        <div class="content__film">
+            <img class="content__film__img">
+            <p class="content__film__name"></p>
+            <p class="content__film__year"></p>
+        </div>
+    </template>
+</head>
+
+<body>
+    <main class="main-wrapper">
+        <h1 class="title">Sani4`s IMDB Movie Searcher</h1>
+        <form action="#" class="search" name="search">
+            <input class="search__input" type="text" name="query">
+            <button class="button button_search search__button" type="submit">Search</button>
+        </form>
+        <div class="content"></div>
+        <div class="buttons">
+            <button class="button button_prev buttons__button hidden">Previous</button>
+            <button class="button button_next buttons__button hidden">Next</button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

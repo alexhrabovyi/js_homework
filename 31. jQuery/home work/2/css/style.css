@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto:wght@400;900&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(214, 173, 173);
+}
+
+.calculator {
+    width: 400px;
+    padding: 20px;
+    background: rgb(155, 155, 155);
+    border-radius: 20px;
+    border: 2px solid rgb(114, 114, 114);
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.display-block {
+    width: 100%;
+    height: 60px;
+    background: rgb(131, 207, 212);
+    border-radius: 7px 7px 0 0;
+    border: 5px solid rgb(114, 114, 114);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.display-block__text {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.model-block {
+    width: 100%;
+    height: 30px;
+    background: rgb(114, 114, 114);
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-block__text {
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: rgb(255, 255, 255);
+}
+
+.buttons-block {
+    margin-top: 40px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.row-2, .row-3, .row-4, .row-4, .row-5 {
+    width: 265px;
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    font-size: 30px;
+    color: rgb(19, 19, 19);
+    background: rgb(226, 226, 226);
+    transition: all 0.1s ease;
+}
+
+.button:hover {
+    background: rgb(211, 200, 200);
+}
+
+.button:active {
+    background: rgb(199, 187, 187);
+}
+
+.button-sign {
+    background: rgb(85, 81, 81);
+    color: rgb(255, 148, 49);
+}
+
+.button-sign:hover {
+    background: rgb(116, 110, 110);
+}
+
+.button-sign:active {
+    background: rgb(66, 64, 64);
+}
+
+.button-del {
+    background: rgb(202, 91, 91);
+    color: rgb(255, 255, 255);
+}
+
+.button-del:hover {
+    background: rgb(209, 73, 73);
+}
+
+.button-del:active {
+    background: rgb(175, 61, 61);
+}
+
+.button_big {
+    height: 205px;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: rgb(255, 148, 49);
+    color: rgb(255, 255, 255);
+}
+
+.button_big:hover {
+    background: rgb(253, 134, 23);
+}
+
+.button_big:active {
+    background: rgb(223, 118, 20);
+}

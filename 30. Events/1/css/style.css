@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    display: inline-block;
+    border: 1px solid black;
+    width: 600px;
+    height: 137px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.textarea {
+    width: 600px;
+    height: 137px;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
